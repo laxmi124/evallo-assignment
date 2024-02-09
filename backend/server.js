@@ -7,7 +7,9 @@ const PORT = process.env.PORT || 8000;
 
 const app = express();
 
-mongoose.connect('mongodb://127.0.0.1:27017/evallo', {
+const mongoDbURL = "mongodb+srv://duttasuravi225:Qqiyp4RPMXxepk8i@cluster0.npsx5wr.mongodb.net/?retryWrites=true&w=majority";
+
+mongoose.connect(mongoDbURL, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
